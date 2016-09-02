@@ -1,0 +1,75 @@
+$turquoise: #13A89E;
+$brown: #5A4A42;
+$camel: #C7B99F;
+$white: #FFF;
+$pearl: #E6E6E6;
+$black: #000;
+
+::selection {
+  background: $turquoise;
+}
+
+::-moz-selection {
+  background: $turquoise;
+}
+
+body {
+  background-color: $brown;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1, h2 {
+
+}
+
+h3, h4 {
+	font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+	color: $camel;
+	font-size: 2.3em;
+}
+
+.logo-lang {
+	position:absolute;
+	top:0;
+	margin: 1.5em;
+}
+
+#main-logo {
+	width: 15%;
+	min-width:15em;
+}
+
+#name {
+	text-align: center;
+}
+
+#name-box {
+	min-width: 15em;
+	margin-top: -10px;
+}
+
+.lang-choice {
+	float:right;
+
+	button {
+		background-color: $camel;
+		border: $camel;
+
+		i {
+		color:$brown;
+		font-size: 1.3em;
+		}
+
+		&:hover {
+			background-color: $camel;
+
+			i {
+				color: $white;
+			}
+		}
+	}
+}
