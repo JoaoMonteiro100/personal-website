@@ -73,3 +73,57 @@ h3 {
 		}
 	}
 }
+
+.diamond {
+    padding-bottom: 30%;
+    width: 30%;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 35%;
+    top: 25%;
+}
+
+.cell {
+    position: absolute;
+    display: block;
+    height: 49%;
+    width: 49%;
+    background-color: $camel;
+    color: $white;
+    line-height: 100%;
+    font-size: 7em;
+    text-align: center;
+
+    &:hover {
+    	background-color: $turquoise;
+    	cursor: pointer;
+    }
+}
+
+.t-l {
+    top: 0px;
+    left: 0px;
+}
+
+.t-r {
+    top: 0px;
+    right: 0px;
+}
+
+.b-l {
+    bottom: 0px;
+    left: 0px;
+}
+
+.b-r {
+    bottom: 0px;
+    right: 0px;
+}
+
+.diamond-text {
+	position: absolute;
+    top:30%;
+    right:30%;
+    bottom:25%;
+	transform: rotate(-45deg);
+}

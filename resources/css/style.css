@@ -72,3 +72,64 @@ h3 {
 .lang-choice button:hover i {
   color: white;
 }
+
+/* line 77, ../sass/style.scss */
+.diamond {
+  padding-bottom: 30%;
+  width: 30%;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 35%;
+  top: 25%;
+}
+
+/* line 86, ../sass/style.scss */
+.cell {
+  position: absolute;
+  display: block;
+  height: 49%;
+  width: 49%;
+  background-color: #c7b99f;
+  color: white;
+  line-height: 100%;
+  font-size: 7em;
+  text-align: center;
+}
+/* line 97, ../sass/style.scss */
+.cell:hover {
+  background-color: #13a89e;
+  cursor: pointer;
+}
+
+/* line 103, ../sass/style.scss */
+.t-l {
+  top: 0px;
+  left: 0px;
+}
+
+/* line 108, ../sass/style.scss */
+.t-r {
+  top: 0px;
+  right: 0px;
+}
+
+/* line 113, ../sass/style.scss */
+.b-l {
+  bottom: 0px;
+  left: 0px;
+}
+
+/* line 118, ../sass/style.scss */
+.b-r {
+  bottom: 0px;
+  right: 0px;
+}
+
+/* line 123, ../sass/style.scss */
+.diamond-text {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  bottom: 25%;
+  transform: rotate(-45deg);
+}
