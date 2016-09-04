@@ -19,6 +19,10 @@ body {
   width: 100%;
 }
 
+.blur {
+    -webkit-filter: blur(5px) grayscale(50%);
+}
+
 h1, h2 {
 
 }
@@ -32,10 +36,44 @@ h3 {
 	font-size: 2.3em;
 }
 
+#footer {
+	width: 100%;
+	margin:0;
+}
+
+#footer .skew:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+  height: 250px;
+  background: $turquoise;
+  z-index: -1;
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+#footer .skew .header-inner {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#top {
+	width: 100%;
+	margin:0;
+}
+
 .logo-lang {
-	position:absolute;
-	top:0;
-	margin: 1.5em;
+	position:relative;
+	display: inline-block;
 }
 
 #main-logo {
@@ -53,8 +91,8 @@ h3 {
 }
 
 .lang-choice {
-	float:right;
-
+	margin-top: 1em;
+	display: inline-block;
 	button {
 		background-color: $camel;
 		border: $camel;
@@ -65,13 +103,31 @@ h3 {
 		}
 
 		&:hover {
-			background-color: $camel;
+			background-color: $pearl;
 
 			i {
-				color: $white;
+				color: $turquoise;
 			}
 		}
 	}
+}
+
+#modal-btn {
+	margin-left: 0.7em;
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+	border: none;
+	background-color: $camel;
+	color: $brown;
+
+	&:hover {
+		color: $turquoise;
+		background-color: $pearl;
+	}
+}
+
+#menu-icon {
+	padding-right: 0.4em;
 }
 
 .diamond {
@@ -80,7 +136,7 @@ h3 {
     transform: rotate(45deg);
     position: absolute;
     left: 35%;
-    top: 25%;
+    top: 20%;
 }
 
 .cell {
@@ -126,4 +182,25 @@ h3 {
     right:30%;
     bottom:25%;
 	transform: rotate(-45deg);
+}
+
+#aboutme {
+	position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.about-me {
+  background-image: url('../img/cropped.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  bottom:0;
+  top:-5em;
+  height: 100%;
+}
+
+.section-header {
+	padding-top: 100px;
 }
