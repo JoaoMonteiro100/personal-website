@@ -215,9 +215,10 @@ h3 {
   bottom: 0;
   top: -5em;
   height: 100%;
+  width: auto;
 }
 
-/* line 204, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .section-header {
   padding-top: 100px;
 }
