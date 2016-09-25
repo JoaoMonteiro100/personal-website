@@ -1,111 +1,86 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
+<head> 
 
-<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="description" content="João's own little corner of the internet">
+<meta name="author" content="João Monteiro">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="João's own little corner of the internet">
-    <meta name="author" content="João Monteiro">
+<title>João Monteiro</title>
 
-    <title>João Monteiro</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Style Sheets --> 
+<link rel="stylesheet" type="text/css" media="all" href="../resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../resources/css/trunk.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../resources/css/style.css" />
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+<!-- Scripts --> 
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined')
+		document.write(unescape("%3Cscript src='../resources/js/jquery-1.9.js'" + 
+															"type='text/javascript'%3E%3C/script%3E"))
+</script>
+<script type="text/javascript" language="javascript" src="../resources/js/trunk.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
 
 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head> 
+ 
+<body> 
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../libs/simple-line-icons/css/simple-line-icons.css">
+<div class="container">
 
-    <!-- Custom CSS -->
-    <link href="../resources/css/style.css" rel="stylesheet">
+	<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+		<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+			<li></li><li></li><li></li>
+		</ul>
+		<h1>João Monteiro</h1>
+	</header>
 
-</head>
+	<nav class="slide">
+		<ul>
+			<li><a href="#about-me" class="active">About me</a></li>
+			<li><a href="#">Résumé</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Contacts</a></li>
+		</ul>
+	</nav>
+	
+	<div id="about-me" style="margin-top:-60px;padding-top:60px;" />
 
-<body id="page-top">
+	<section class="content slide" id="welcome">
+		<div class="overlay">
+			<h1>Hey there, I'm João!</h1>
+			<div id="text">
+				<p>I’m a 23 year old (soon-to-be) informatics engineer with an artistic vein. That means I have the technical knowledge, the creative intuition and the social skills that complement each other and result in synergetic solutions.</p>
+	            <p>I like to be challenged and I always put the very best of myself in everything I do. I have a great sense of responsibility, the ingenuity needed to solve problems swiftly, and the passion to do it as best as possible.</p>
+	            <p>If you’d like to contact me, you can do it in any of the ways presented below. In this website you can also check my CV, sneak peeks of products I’ve developed, and a photo portfolio (one of my passions).</p>
+	            <p>Welcome, and see you around!</p>
+	        </div>
+		</div>
+	</section>
 
-    <section id="diamond" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="diamond">
-            <div class="cell t-l"><span class="diamond-text icon-envelope-letter"></span></div>
-            <div class="cell t-r"><span class="diamond-text icon-notebook"></span></div>
-            <div class="cell b-l"><span class="diamond-text icon-graduation"></span></div>
-            <div class="cell b-r"><span class="diamond-text icon-picture"></span></div>
-        </div>
-    </section>
+	<footer class="content slide" id="footer">
+		Copyright
+	</footer>
+	
+</div>
 
-    <div class="content">
-        <section id="top" class="logo-lang"><!--
-        	<div class="col-xs-11">
-        		<div class="col-xs-12">
-            		<img src="../resources/img/logo-turquoise.png" id="main-logo">
-            	</div>
-                <div class="col-xs-2">
-                    <div id="name-box">
-            		    <h3 id="name">João Monteiro</h3>
-                    </div>
-            	</div>
-        	</div>-->
-            <div class="col-xs-12">
-                <div class="dropdown lang-choice">
-    			  <button class="btn btn-default dropdown-toggle" type="button" id="langs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    			    <i class="fa fa-globe text-primary"></i>
-    			  </button>
-    			  <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="langs">
-    			    <li><a href="#">English</a></li>
-    			    <li><a href="#">Português</a></li>
-    			  </ul>
-    			</div>
-                <button type="button" class="btn btn-md" data-toggle="modal" data-target="#diamond" id="modal-btn"><i class="fa fa-bars" id="menu-icon"></i> Menu</button>
-            </div>
-        </section>
-
-        <section id="aboutme">
-            <div class="about-me">
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <div class="spacing"></div>
-                <h1 class="section-header">Hey there, I'm João!</h1>
-                <p>I’m a 23 year old (soon-to-be) informatics engineer with an artistic vein. That means I have the technical knowledge, the creative intuition and the social skills that complement each other and result in synergetic solutions.</p>
-                <p>I like to be challenged and I always put the very best of myself in everything I do. I have a great sense of responsibility, the ingenuity needed to solve problems swiftly, and the passion to do it as best as possible.</p>
-                <p>If you’d like to contact me, you can do it in any of the ways presented below. In this website you can also check my CV, sneak peeks of products I’ve developed, and a photo portfolio (one of my passions).</p>
-                <p>Welcome, and see you around!</p>
-            </div>
-        </section>
-
-    </div>
-
-    <!-- jQuery -->
-    <script src="../libs/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Custom JavaScript -->
-    <script src="../resources/js/script.js"></script>
-
-</body>
-
+	
+</body> 
 </html>
+
+
+
+
+
+
+
