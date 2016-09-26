@@ -293,6 +293,10 @@ nav li a:hover {
     p {
       font-size: 1.75em;
       line-height: 2.2em;
+
+      a {
+        color: $darker-turquoise;
+      }
     }
 
     h1 {
@@ -312,126 +316,175 @@ nav li a:hover {
   z-index: -1;
 }
 
-@media only screen and (max-width: 1400px) {
-.overlay {
-  padding: 20px;
+/* Small desktop */
+@media only screen and (max-width: 1280px){
+  .overlay {
   #text {
+    padding-left:10px;
     
     p {
-      font-size: 1.6em;
-      line-height: 2.2em;
+      font-size: 1.65em;
     }
 
     h1 {
-      font-size: 5.2em;
+      font-size: 5.5em;
       padding-top: 40px;
     }
   }
 }
 }
 
-@media only screen and (max-width: 1200px) {
-.overlay {
-  padding: 20px;
-  background: -moz-linear-gradient(left,  rgba(216,213,219,1) 0%, rgba(216,213,219,0.9) 45%, rgba(216,213,219,0.61) 55%, rgba(216,213,219,0) 65%, rgba(216,213,219,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left,  rgba(216,213,219,1) 0%,rgba(216,213,219,0.9) 45%,rgba(216,213,219,0.61) 55%,rgba(216,213,219,0) 65%,rgba(216,213,219,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,  rgba(216,213,219,1) 0%,rgba(216,213,219,0.9) 45%,rgba(216,213,219,0.61) 55%,rgba(216,213,219,0) 65%,rgba(216,213,219,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* Ultrabooks */
+@media only screen and (max-height: 900px){
+  .overlay {
+  background: -moz-linear-gradient(left,  rgba(216,213,219,1) 0%, rgba(216,213,219,0.9) 45%, rgba(216,213,219,0.61) 55%, rgba(216,213,219,0) 60%, rgba(216,213,219,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(216,213,219,1) 0%,rgba(216,213,219,0.9) 45%,rgba(216,213,219,0.61) 55%,rgba(216,213,219,0) 60%,rgba(216,213,219,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(216,213,219,1) 0%,rgba(216,213,219,0.9) 45%,rgba(216,213,219,0.61) 55%,rgba(216,213,219,0) 60%,rgba(216,213,219,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d5db', endColorstr='#00d8d5db',GradientType=1 ); /* IE6-9 */
 
   #text {
-    
-    p {
-      font-size: 1.6em;
-      line-height: 2.2em;
-    }
-
-    h1 {
-      font-size: 5.2em;
-      padding-top: 40px;
-    }
-  }
-}
-}
-
-@media only screen and (max-width: 992px) {
-.overlay {
-  padding: 20px;
-  background: none;
-  background-color: rgba(255,255,255,0.8);
-
-  #text {
+    padding-left:5px;
     
     p {
       font-size: 1.5em;
-      line-height: 2.2em;
+      line-height: 1.9em;
     }
 
     h1 {
-      font-size: 5em;
-      padding-top: 20px;
+      font-size: 5.5em;
+      padding-top: 10px;
     }
   }
 }
 }
 
-@media only screen and (max-width: 780px) {
-.overlay {
-  padding: 20px;
-  background: none;
-  background-color: rgba(255,255,255,0.8);
+/* Tablets */
+@media only screen and (max-height: 768px) and (max-width: 1024px){
+  .overlay {
+  background: -moz-linear-gradient(left,  rgba(216,213,219,1) 0%, rgba(216,213,219,0.9) 55%, rgba(216,213,219,0.61) 65%, rgba(216,213,219,0) 70%, rgba(216,213,219,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(216,213,219,1) 0%,rgba(216,213,219,0.9) 55%,rgba(216,213,219,0.61) 65%,rgba(216,213,219,0) 70%,rgba(216,213,219,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(216,213,219,1) 0%,rgba(216,213,219,0.9) 55%,rgba(216,213,219,0.61) 65%,rgba(216,213,219,0) 70%,rgba(216,213,219,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d5db', endColorstr='#00d8d5db',GradientType=1 ); /* IE6-9 */
 
   #text {
+    padding-left:5px;
     
     p {
       font-size: 1.5em;
-      line-height: 2.2em;
+      line-height: 1.9em;
     }
 
     h1 {
-      font-size: 5em;
-      padding-top: 20px;
+      font-size: 5.5em;
+      padding-top: 10px;
     }
   }
 }
 }
 
-@media only screen and (max-width: 600px) {
-.overlay {
-  padding: 20px;
-  background: none;
-  background-color: rgba(255,255,255,0.8);
+/* Bootstrap changes text configurations */
+@media only screen and (max-width: 992px){
+  .overlay {
+  background: rgba(255,255,255,0.8);
 
   #text {
+    padding-left:5px;
     
     p {
-      font-size: 1.4em;
+      font-size: 1.5em;
+      line-height: 1.9em;
+    }
+
+    h1 {
+      font-size: 5.5em;
+      padding-top: 10px;
+    }
+  }
+}
+}
+
+/* High-end Windows phone */
+@media only screen and (max-width: 768px){
+  .overlay {
+  background: rgba(255,255,255,0.8);
+
+   #text {
+    padding-left:5px;
+    
+    p {
+      font-size: 1.7em;
       line-height: 2em;
     }
 
     h1 {
-      font-size: 4.1em;
-      padding-top: 20px;
+      font-size: 5.5em;
+      padding-top: 10px;
     }
   }
 }
 }
 
-@media only screen and (max-width: 550px) {
-.overlay {
-  padding: 20px;
-  background: none;
-  background-color: rgba(255,255,255,0.8);
+/* iPhone */
+@media only screen and (max-width: 640px){
+  .overlay {
+  background: rgba(255,255,255,0.8);
 
   #text {
+    padding-left:5px;
     
     p {
-      font-size: 1.4em;
-      line-height: 2em;
+      font-size: 1.5em;
+      line-height: 1.9em;
     }
 
     h1 {
-      font-size: 4.1em;
-      padding-top: 20px;
+      font-size: 5.5em;
+      padding-top: 10px;
+    }
+  }
+}
+}
+
+/* Low-end Windows phone */
+@media only screen and (max-width: 480px){
+  .overlay {
+  background: rgba(255,255,255,0.8);
+
+  #text {
+    padding-left:5px;
+    
+    p {
+      font-size: 1.3em;
+      line-height: 1.7em;
+    }
+
+    h1 {
+      font-size: 4.9em;
+      padding-top: 5px;
+      padding-bottom: 0px;
+    }
+  }
+}
+}
+
+/* Old iPhones */
+@media only screen and (max-width: 360px){
+  .overlay {
+  background: rgba(255,255,255,0.8);
+  padding: 15px;
+
+  #text {
+    padding-left:0px;
+    
+    p {
+      font-size: 1.1em;
+      line-height: 1.2em;
+    }
+
+    h1 {
+      font-size: 2.7em;
+      padding-top: 0px;
+      padding-bottom: 0px;
     }
   }
 }
@@ -439,7 +492,6 @@ nav li a:hover {
 #arrow-down {
   display: none;
 }
-
 }
 
 #cv {

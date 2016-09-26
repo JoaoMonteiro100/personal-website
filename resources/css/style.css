@@ -319,14 +319,18 @@ nav li a:hover {
   font-size: 1.75em;
   line-height: 2.2em;
 }
-/* line 298, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
+.overlay #text p a {
+  color: #11978e;
+}
+/* line 302, ../sass/style.scss */
 .overlay #text h1 {
   font-size: 6em;
   padding-bottom: 25px;
   padding-top: 50px;
 }
 
-/* line 306, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 #arrow-down {
   position: absolute;
   height: 45px;
@@ -336,124 +340,192 @@ nav li a:hover {
   z-index: -1;
 }
 
-@media only screen and (max-width: 1400px) {
-  /* line 316, ../sass/style.scss */
-  .overlay {
-    padding: 20px;
-  }
-  /* line 320, ../sass/style.scss */
-  .overlay #text p {
-    font-size: 1.6em;
-    line-height: 2.2em;
+/* Small desktop */
+@media only screen and (max-width: 1280px) {
+  /* line 322, ../sass/style.scss */
+  .overlay #text {
+    padding-left: 10px;
   }
   /* line 325, ../sass/style.scss */
+  .overlay #text p {
+    font-size: 1.65em;
+  }
+  /* line 329, ../sass/style.scss */
   .overlay #text h1 {
-    font-size: 5.2em;
+    font-size: 5.5em;
     padding-top: 40px;
   }
 }
-@media only screen and (max-width: 1200px) {
-  /* line 334, ../sass/style.scss */
+/* Ultrabooks */
+@media only screen and (max-height: 900px) {
+  /* line 339, ../sass/style.scss */
   .overlay {
-    padding: 20px;
-    background: -moz-linear-gradient(left, #d8d5db 0%, rgba(216, 213, 219, 0.9) 45%, rgba(216, 213, 219, 0.61) 55%, rgba(216, 213, 219, 0) 65%, rgba(216, 213, 219, 0) 100%);
+    background: -moz-linear-gradient(left, #d8d5db 0%, rgba(216, 213, 219, 0.9) 45%, rgba(216, 213, 219, 0.61) 55%, rgba(216, 213, 219, 0) 60%, rgba(216, 213, 219, 0) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #d8d5db 0%, rgba(216, 213, 219, 0.9) 45%, rgba(216, 213, 219, 0.61) 55%, rgba(216, 213, 219, 0) 65%, rgba(216, 213, 219, 0) 100%);
+    background: -webkit-linear-gradient(left, #d8d5db 0%, rgba(216, 213, 219, 0.9) 45%, rgba(216, 213, 219, 0.61) 55%, rgba(216, 213, 219, 0) 60%, rgba(216, 213, 219, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #d8d5db 0%, rgba(216, 213, 219, 0.9) 45%, rgba(216, 213, 219, 0.61) 55%, rgba(216, 213, 219, 0) 65%, rgba(216, 213, 219, 0) 100%);
+    background: linear-gradient(to right, #d8d5db 0%, rgba(216, 213, 219, 0.9) 45%, rgba(216, 213, 219, 0.61) 55%, rgba(216, 213, 219, 0) 60%, rgba(216, 213, 219, 0) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d5db', endColorstr='#00d8d5db',GradientType=1 );
     /* IE6-9 */
   }
-  /* line 343, ../sass/style.scss */
-  .overlay #text p {
-    font-size: 1.6em;
-    line-height: 2.2em;
+  /* line 345, ../sass/style.scss */
+  .overlay #text {
+    padding-left: 5px;
   }
   /* line 348, ../sass/style.scss */
-  .overlay #text h1 {
-    font-size: 5.2em;
-    padding-top: 40px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  /* line 357, ../sass/style.scss */
-  .overlay {
-    padding: 20px;
-    background: none;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  /* line 364, ../sass/style.scss */
   .overlay #text p {
     font-size: 1.5em;
-    line-height: 2.2em;
+    line-height: 1.9em;
+  }
+  /* line 353, ../sass/style.scss */
+  .overlay #text h1 {
+    font-size: 5.5em;
+    padding-top: 10px;
+  }
+}
+/* Tablets */
+@media only screen and (max-height: 768px) and (max-width: 1024px) {
+  /* line 363, ../sass/style.scss */
+  .overlay {
+    background: -moz-linear-gradient(left, #d8d5db 0%, rgba(216, 213, 219, 0.9) 55%, rgba(216, 213, 219, 0.61) 65%, rgba(216, 213, 219, 0) 70%, rgba(216, 213, 219, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #d8d5db 0%, rgba(216, 213, 219, 0.9) 55%, rgba(216, 213, 219, 0.61) 65%, rgba(216, 213, 219, 0) 70%, rgba(216, 213, 219, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #d8d5db 0%, rgba(216, 213, 219, 0.9) 55%, rgba(216, 213, 219, 0.61) 65%, rgba(216, 213, 219, 0) 70%, rgba(216, 213, 219, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d5db', endColorstr='#00d8d5db',GradientType=1 );
+    /* IE6-9 */
   }
   /* line 369, ../sass/style.scss */
-  .overlay #text h1 {
-    font-size: 5em;
-    padding-top: 20px;
+  .overlay #text {
+    padding-left: 5px;
   }
-}
-@media only screen and (max-width: 780px) {
-  /* line 378, ../sass/style.scss */
-  .overlay {
-    padding: 20px;
-    background: none;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  /* line 385, ../sass/style.scss */
+  /* line 372, ../sass/style.scss */
   .overlay #text p {
     font-size: 1.5em;
-    line-height: 2.2em;
+    line-height: 1.9em;
+  }
+  /* line 377, ../sass/style.scss */
+  .overlay #text h1 {
+    font-size: 5.5em;
+    padding-top: 10px;
+  }
+}
+/* Bootstrap changes text configurations */
+@media only screen and (max-width: 992px) {
+  /* line 387, ../sass/style.scss */
+  .overlay {
+    background: rgba(255, 255, 255, 0.8);
   }
   /* line 390, ../sass/style.scss */
+  .overlay #text {
+    padding-left: 5px;
+  }
+  /* line 393, ../sass/style.scss */
+  .overlay #text p {
+    font-size: 1.5em;
+    line-height: 1.9em;
+  }
+  /* line 398, ../sass/style.scss */
   .overlay #text h1 {
-    font-size: 5em;
-    padding-top: 20px;
+    font-size: 5.5em;
+    padding-top: 10px;
   }
 }
-@media only screen and (max-width: 600px) {
-  /* line 399, ../sass/style.scss */
+/* High-end Windows phone */
+@media only screen and (max-width: 768px) {
+  /* line 408, ../sass/style.scss */
   .overlay {
-    padding: 20px;
-    background: none;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  /* line 406, ../sass/style.scss */
-  .overlay #text p {
-    font-size: 1.4em;
-    line-height: 2em;
+    background: rgba(255, 255, 255, 0.8);
   }
   /* line 411, ../sass/style.scss */
-  .overlay #text h1 {
-    font-size: 4.1em;
-    padding-top: 20px;
+  .overlay #text {
+    padding-left: 5px;
   }
-}
-@media only screen and (max-width: 550px) {
-  /* line 420, ../sass/style.scss */
-  .overlay {
-    padding: 20px;
-    background: none;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  /* line 427, ../sass/style.scss */
+  /* line 414, ../sass/style.scss */
   .overlay #text p {
-    font-size: 1.4em;
+    font-size: 1.7em;
     line-height: 2em;
   }
-  /* line 432, ../sass/style.scss */
+  /* line 419, ../sass/style.scss */
   .overlay #text h1 {
-    font-size: 4.1em;
-    padding-top: 20px;
+    font-size: 5.5em;
+    padding-top: 10px;
+  }
+}
+/* iPhone */
+@media only screen and (max-width: 640px) {
+  /* line 429, ../sass/style.scss */
+  .overlay {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  /* line 432, ../sass/style.scss */
+  .overlay #text {
+    padding-left: 5px;
+  }
+  /* line 435, ../sass/style.scss */
+  .overlay #text p {
+    font-size: 1.5em;
+    line-height: 1.9em;
+  }
+  /* line 440, ../sass/style.scss */
+  .overlay #text h1 {
+    font-size: 5.5em;
+    padding-top: 10px;
+  }
+}
+/* Low-end Windows phone */
+@media only screen and (max-width: 480px) {
+  /* line 450, ../sass/style.scss */
+  .overlay {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  /* line 453, ../sass/style.scss */
+  .overlay #text {
+    padding-left: 5px;
+  }
+  /* line 456, ../sass/style.scss */
+  .overlay #text p {
+    font-size: 1.3em;
+    line-height: 1.7em;
+  }
+  /* line 461, ../sass/style.scss */
+  .overlay #text h1 {
+    font-size: 4.9em;
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+}
+/* Old iPhones */
+@media only screen and (max-width: 360px) {
+  /* line 472, ../sass/style.scss */
+  .overlay {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+  }
+  /* line 476, ../sass/style.scss */
+  .overlay #text {
+    padding-left: 0px;
+  }
+  /* line 479, ../sass/style.scss */
+  .overlay #text p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+  /* line 484, ../sass/style.scss */
+  .overlay #text h1 {
+    font-size: 2.7em;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
-  /* line 439, ../sass/style.scss */
+  /* line 492, ../sass/style.scss */
   #arrow-down {
     display: none;
   }
 }
-/* line 445, ../sass/style.scss */
+/* line 497, ../sass/style.scss */
 #cv {
   position: relative;
   z-index: -1;
@@ -462,7 +534,7 @@ nav li a:hover {
   height: 100vh;
 }
 
-/* line 453, ../sass/style.scss */
+/* line 505, ../sass/style.scss */
 footer {
   position: relative;
   z-index: -1;
