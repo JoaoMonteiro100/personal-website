@@ -8,6 +8,7 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="description" content="João's own little corner of the internet">
+<meta name="keywords" content="João, Monteiro, João Monteiro, software, computer engineer, developer">
 <meta name="author" content="João Monteiro">
 
 <title>João Monteiro</title>
@@ -16,50 +17,74 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
 
 <!-- Style Sheets --> 
-<link rel="stylesheet" type="text/css" media="all" href="../resources/css/reset.css" />
-<link rel="stylesheet" type="text/css" media="all" href="../resources/css/trunk.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../libs/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../libs/simple-line-icons/css/simple-line-icons.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../libs/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../libs/trunk/css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../libs/trunk/css/trunk.css" />
 <link rel="stylesheet" type="text/css" media="all" href="../resources/css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../resources/css/animations.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../resources/css/animate.min.css" />
 
 <!-- Scripts --> 
 <script type="text/javascript">
 	if (typeof jQuery == 'undefined')
-		document.write(unescape("%3Cscript src='../resources/js/jquery-1.9.js'" + 
+		document.write(unescape("%3Cscript src='../libs/jquery/jquery.min.js'" + 
 															"type='text/javascript'%3E%3C/script%3E"))
 </script>
-<script type="text/javascript" language="javascript" src="../resources/js/trunk.js"></script>
-<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<![endif]-->
-
+<script type="text/javascript" language="javascript" src="../libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="../libs/trunk/js/trunk.js"></script>
+<script type="text/javascript" language="javascript" src="../resources/js/script.js"></script>
 
 </head> 
  
 <body> 
 
-<div class="container">
+<div class="container container-fluid">
 
-	<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-		<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+	<header class="slide">
+		<ul id="navToggle" class="burger slide">
 			<li></li><li></li><li></li>
 		</ul>
-		<h1>João Monteiro</h1>
+		<img src="../resources/img/logo-white.png" />
+		<h1>João Monteiro</h1>		
 	</header>
 
 	<nav class="slide">
+		<div class="dropdown lang-choice">
+			<button class="btn btn-default dropdown-toggle" type="button" id="langs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<i class="fa fa-language text-primary"></i>
+			</button>
+			<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="langs">
+				<li><a href="#">English</a></li>
+				<li><a href="#">Português</a></li>
+				<li><a href="#">Pseudocode</a></li>
+			</ul>
+		</div>
+		<div class="dropup lang-choice2">
+			<button class="btn btn-default dropdown-toggle" type="button" id="langs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<i class="fa fa-language text-primary"></i>
+			</button>
+			<ul class="dropdown-menu dropup-menu-right" aria-labelledby="langs">
+				<li><a href="#">English</a></li>
+				<li><a href="#">Português</a></li>
+				<li><a href="#">Pseudocode</a></li>
+			</ul>
+		</div>
 		<ul>
 			<li><a href="#about-me" class="active">About me</a></li>
-			<li><a href="#">Résumé</a></li>
+			<li><a href="#resume">Résumé</a></li>
 			<li><a href="#">Projects</a></li>
 			<li><a href="#">Contacts</a></li>
 		</ul>
 	</nav>
 	
-	<div id="about-me" style="margin-top:-60px;padding-top:60px;" />
+	<div id="about-me"></div>
 
-	<section class="content slide" id="welcome">
-		<div class="overlay">
-			<h1>Hey there, I'm João!</h1>
-			<div id="text">
+	<section class="content slide light-section" id="welcome">
+		<div class="overlay col-lg-12">
+			<div class="col-lg-7 col-md-8 animated bounceInUp" id="text">
+				<h1>Hey there, I'm João!</h1>
 				<p>I’m a 23 year old (soon-to-be) informatics engineer with an artistic vein. That means I have the technical knowledge, the creative intuition and the social skills that complement each other and result in synergetic solutions.</p>
 	            <p>I like to be challenged and I always put the very best of myself in everything I do. I have a great sense of responsibility, the ingenuity needed to solve problems swiftly, and the passion to do it as best as possible.</p>
 	            <p>If you’d like to contact me, you can do it in any of the ways presented below. In this website you can also check my CV, sneak peeks of products I’ve developed, and a photo portfolio (one of my passions).</p>
@@ -68,7 +93,44 @@
 		</div>
 	</section>
 
-	<footer class="content slide" id="footer">
+	<a href="#resume"><img class="content slide floating" id="arrow-down" src="../resources/img/arrow-down.png" /></a>
+
+	<div id="resume"></div>
+
+	<section class="content slide dark-section" id="cv">
+		<div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="icon-box green">
+                            <i class="fa fa-child"></i>
+                            <h2>Psicologia</h2>
+                            <p>Avaliamos e intervimos na área da Psicologia Clínica e da Saúde e Neuropsicologia. Pode encontrar-nos em Aveiro.</p>
+                            <a href="avaliacao-psicologica.html" class="btn-primary btn">Saber mais</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="icon-box blue">
+                            <i class="fa fa-comments"></i>
+                            <h2>Terapia da fala</h2>
+                            <p>Ajudamos a prevenir, avaliar, diagnosticar e resolver problemas relacionados com a comunicação. Estamos na zona de Aveiro.</p>
+                            <a href="terapia-fala.html" class="btn-primary btn">Saber mais</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="icon-box purple">
+                            <i class="fa fa-cutlery"></i>
+                            <h2>Nutrição</h2>
+                            <p>Orientamos, avaliamos e acompanhamos os seus hábitos alimentares com Nutricionistas experientes em Aveiro.</p>
+                            <a href="nutricao.html" class="btn-primary btn">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<footer class="content slide dark-section" id="footer">
 		Copyright
 	</footer>
 	
@@ -77,7 +139,6 @@
 	
 </body> 
 </html>
-
 
 
 

@@ -14,24 +14,25 @@ $(function() {
     var content = $('.content');
 
     function open() {
-        $(items).removeClass('close').addClass('open');
+        $(items).removeClass('close-sidebar').addClass('open-sidebar');
     }
 
     function close() {
-        $(items).removeClass('open').addClass('close');
+        $(items).removeClass('open-sidebar').addClass('close-sidebar');
     }
 
     $('#navToggle').on(clickevent, function(event) {
         event.stopPropagation();
         event.preventDefault();
-        if (content.hasClass('open')) {
+        if (content.hasClass('open-sidebar')) {
             close();
         } else {
             open();
         }
     });
+    
     content.click(function() {
-        if (content.hasClass('open')) {
+        if (content.hasClass('open-sidebar')) {
             close();
         }
     });

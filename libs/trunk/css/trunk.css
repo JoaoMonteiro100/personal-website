@@ -19,7 +19,7 @@ body {
 }
 a {text-decoration: none;}
 
-.container {
+.container-fluid {
 	overflow: hidden;
 	background-color: #000;
 
@@ -52,7 +52,7 @@ header h1 {
 	padding: 10px;
 	top: 4px;
 	left: 10px;
-	
+	cursor: pointer;
 	display: none;
 }
 .burger li {
@@ -62,12 +62,16 @@ header h1 {
 	border-radius: 3px;
 	margin: 5px 0;
 }
-.burger.open li {background-color: #d9dde1;}
+.burger.open-sidebar li {background-color: #d9dde1;}
 
 nav {
 	position: absolute;
 	top: 0;
 	right: 5px;
+}
+nav ul {
+	float: right;
+	margin-right: 10px;
 }
 nav li {
 	float: left;
@@ -82,6 +86,8 @@ nav li a {
 	display: block;
 }
 nav li a:hover {color: #000;}
+nav li a:active {color: #000;}
+nav li a:link {color: #000;}
 
 
 
@@ -117,7 +123,7 @@ nav li a:hover {color: #000;}
 
 header {
 	height: 60px;
-	z-index: 2;
+	z-index: 100;
 	background-color: #060a0c;
 	
 	position: fixed;
@@ -140,10 +146,11 @@ header h1 {
 
 
 /*  Nav Drawer Layout  */
-nav {position: relative;}
+nav {position: relative;z-index: -2;}
 
 nav ul {
 	height: 100%;
+	float: none;
 	overflow-y: auto;
 }
 nav li {
@@ -160,15 +167,12 @@ nav li a.logo {
 }
 nav li a.active {
 	color: #fff;
-	background-color: #141e23;
+	background-color: #0B645E;
 }
 nav li a:hover {
 	color: #fff;
-	background-color: #19252c;
+	background-color: #11978E;
 }
-nav li:first-child a.active,
-nav li:first-child a:hover 
-{border-radius: 10px 0 0 0;}
 
 .header-section {margin-top: 60px;}
 
@@ -181,8 +185,7 @@ nav {
 	left: 0;
 	top: 0;
 	margin: 0;
-	background-color: #1d2d35;
-	border-radius: 8px;
+	background-color: #13A89E;
 	
 	/* starting point */
 	opacity: .3;
@@ -192,9 +195,9 @@ nav {
 }
 
 /*Nav Expanding Open Effect*/
-nav.open {
+nav.open-sidebar {
 	opacity: 1;
-
+	z-index: -1;
 	-webkit-transform: translate3d(0,0,0)scale(1);
 	-webkit-animation: slideIn .35s ease-in-out;
 	
@@ -224,7 +227,7 @@ nav.open {
 }
 
 /*Nav Shrinking Closed Effect*/
-nav.close {
+nav.close-sidebar {
 	opacity: .3;
 	
 	-webkit-transform: translate3d(5%,0,0)scale(.97);
@@ -263,12 +266,12 @@ nav.close {
 	-webkit-transform: translate3d(0,0,0);
 	-moz-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
-	z-index: 1;
+	z-index: 99;
 }
 
 /*Content Sliding Open Effect*/
-header.open,
-.content.open 
+header.open-sidebar,
+.content.open-sidebar 
 {   
 	-webkit-transform: translate3d(240px,0,0);
 	-webkit-animation: open .5s ease-in-out;
@@ -296,8 +299,8 @@ header.open,
 }
 
 /*Content Sliding Closed Effect*/
-header.close,
-.content.close 
+header.close-sidebar,
+.content.close-sidebar 
 {
 	-webkit-transform: translate3d(0,0,0);
 	-webkit-animation: close .3s ease-in-out;
