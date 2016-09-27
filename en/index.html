@@ -18,10 +18,12 @@
 
 <!-- Style Sheets --> 
 <link rel="stylesheet" type="text/css" media="all" href="../libs/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../libs/materialize/css/materialize.min.css" />
 <link rel="stylesheet" type="text/css" media="all" href="../libs/simple-line-icons/css/simple-line-icons.css" />
 <link rel="stylesheet" type="text/css" media="all" href="../libs/font-awesome/css/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" media="all" href="../libs/trunk/css/reset.css" />
 <link rel="stylesheet" type="text/css" media="all" href="../libs/trunk/css/trunk.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../resources/css/circle.css" />
 <link rel="stylesheet" type="text/css" media="all" href="../resources/css/style.css" />
 <link rel="stylesheet" type="text/css" media="all" href="../resources/css/animations.css" />
 <link rel="stylesheet" type="text/css" media="all" href="../resources/css/animate.min.css" />
@@ -33,6 +35,7 @@
 															"type='text/javascript'%3E%3C/script%3E"))
 </script>
 <script type="text/javascript" language="javascript" src="../libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="../libs/materialize/js/materialize.min.js"></script>
 <script type="text/javascript" language="javascript" src="../libs/trunk/js/trunk.js"></script>
 <script type="text/javascript" language="javascript" src="../resources/js/script.js"></script>
 
@@ -56,9 +59,9 @@
 				<i class="fa fa-language text-primary"></i>
 			</button>
 			<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="langs">
-				<li><a href="#">English</a></li>
-				<li><a href="#">Português</a></li>
-				<li><a href="#">Pseudocode</a></li>
+				<li class="disabled"><a href="#">English</a></li>
+				<li><a href="../pt/index.html">Português</a></li>
+				<li><a href="../psc/index.html">Pseudocode</a></li>
 			</ul>
 		</div>
 		<div class="dropup lang-choice2">
@@ -66,16 +69,16 @@
 				<i class="fa fa-language text-primary"></i>
 			</button>
 			<ul class="dropdown-menu dropup-menu-right" aria-labelledby="langs">
-				<li><a href="#">English</a></li>
-				<li><a href="#">Português</a></li>
-				<li><a href="#">Pseudocode</a></li>
+				<li class="disabled"><a href="#">English</a></li>
+				<li><a href="../pt/index.html">Português</a></li>
+				<li><a href="../psc/index.html">Pseudocode</a></li>
 			</ul>
 		</div>
 		<ul>
 			<li><a href="#about-me" class="active">About me</a></li>
 			<li><a href="#resume">Résumé</a></li>
-			<li><a href="#">Projects</a></li>
-			<li><a href="#">Contacts</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#contacts">Contacts</a></li>
 		</ul>
 	</nav>
 	
@@ -98,36 +101,194 @@
 	<div id="resume"></div>
 
 	<section class="content slide dark-section" id="cv">
-		<div class="row">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="icon-box green">
-                            <i class="fa fa-child"></i>
-                            <h2>Psicologia</h2>
-                            <p>Avaliamos e intervimos na área da Psicologia Clínica e da Saúde e Neuropsicologia. Pode encontrar-nos em Aveiro.</p>
-                            <a href="avaliacao-psicologica.html" class="btn-primary btn">Saber mais</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="icon-box blue">
-                            <i class="fa fa-comments"></i>
-                            <h2>Terapia da fala</h2>
-                            <p>Ajudamos a prevenir, avaliar, diagnosticar e resolver problemas relacionados com a comunicação. Estamos na zona de Aveiro.</p>
-                            <a href="terapia-fala.html" class="btn-primary btn">Saber mais</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="icon-box purple">
-                            <i class="fa fa-cutlery"></i>
-                            <h2>Nutrição</h2>
-                            <p>Orientamos, avaliamos e acompanhamos os seus hábitos alimentares com Nutricionistas experientes em Aveiro.</p>
-                            <a href="nutricao.html" class="btn-primary btn">Saber mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<h1 class="centered light-text">Résumé</h1>
+		<hr>
+		<h2>Education</h2>
+		<!-- STEPS -->
+		<section id="steps" class="steps-section">
+		<div class="steps-timeline">
+		  <div class="steps-one">
+		    <img class="steps-img" src="../resources/img/mario-sacramento.jpg" alt="" />
+		    <h3 class="steps-name">
+		      Dr. Mário Sacramento
+		    </h3>
+		    <p class="steps-description">
+		      Graduated in Science and Technology in Dr. Mário Sacramento Highschool between 2008 and 2011 in Aveiro, Portugal.
+		    </p>
+		    <p class="steps-sub-description">
+		    	Final grade: 19,2 / 20
+		    </p>
+		  </div>
+
+		  <div class="steps-two">
+		    <img class="steps-img" src="../resources/img/feup.jpg" alt="" />
+		    <h3 class="steps-name">
+		      Porto University
+		    </h3>
+		    <p class="steps-description">
+		       Currently finishing an Informatics and Computing Engineering integrated masters in the Faculty of Engineering of Porto University in Porto, Portugal.
+		    </p>
+		  </div>
+
+		  <div class="steps-three">
+		    <img class="steps-img" src="../resources/img/aalto.jpg" alt="" />
+		    <h3 class="steps-name">
+		      Aalto University
+		    </h3>
+		    <p class="steps-description">
+		       Went in Erasmus+ during the autumn semester of 2015/16 to the Aalto School of Science and Technology in Espoo, Finland.
+		    </p>
+		    <p class="steps-sub-description">
+		    	Final grade: 4,5 / 5
+		    </p>
+		  </div>
+		</div><!-- /.steps-timeline -->
+		</section>
+
+		<h2>Professional experience</h2>
+
+		<div class="container">
+			<div class="row col-md-12">
+				<div class="experience-card col-md-4">
+					<h3>Internship at AIESEC</h3>
+					<p>Abchsdiai</p>
+				</div>
+				<div class="experience-card col-md-4">
+					<h3>Internship at AIESEC</h3>
+					<p>Abchsdiai</p>
+				</div>
+				<div class="experience-card col-md-4">
+					<h3>Internship at AIESEC</h3>
+					<p>Abchsdiai</p>
+				</div>
+			</div>
+		</div>
+
+		<h2>Skills</h2>
+			<div class="container">
+				<div class="row col-md-12">
+					<dl class="animated fadeInLeft col-md-offset-1 col-md-4">
+						<dd class="percentage percentage-85"><span class="text">Teamwork</span></dd>
+						<dd class="percentage percentage-98"><span class="text">Responsibility</span></dd>
+						<dd class="percentage percentage-90"><span class="text">Communication</span></dd>
+						<dd class="percentage percentage-95"><span class="text">Initiative</span></dd>
+						<dd class="percentage percentage-80"><span class="text">Autonomy</span></dd>
+						<dd class="percentage percentage-70"><span class="text">Marketing</span></dd>
+						<dd class="percentage percentage-96"><span class="text">Creativity</span></dd>
+						<dd class="percentage percentage-90"><span class="text">Desing thinking</span></dd>
+						<dd class="percentage percentage-50"><span class="text">UXD</span></dd>
+						<dd class="percentage percentage-65"><span class="text">Entrepreneurship</span></dd>
+						<dd class="percentage percentage-55"><span class="text">Adobe suite</span></dd>
+					</dl>
+					<dl class="animated fadeInLeft col-md-offset-1 col-md-4">
+						<dd class="percentage percentage-75"><span class="text">Java</span></dd>
+						<dd class="percentage percentage-65"><span class="text">C++</span></dd>
+						<dd class="percentage percentage-90"><span class="text">CSS / SASS</span></dd>
+						<dd class="percentage percentage-60"><span class="text">JavaScript</span></dd>
+						<dd class="percentage percentage-96"><span class="text">Software design</span></dd>
+						<dd class="percentage percentage-94"><span class="text">Proj. management</span></dd>
+						<dd class="percentage percentage-91"><span class="text">REST</span></dd>
+						<dd class="percentage percentage-94"><span class="text">GIT / SVN</span></dd>
+						<dd class="percentage percentage-60"><span class="text">SQL</span></dd>
+						<dd class="percentage percentage-55"><span class="text">PROLOG</span></dd>
+						<dd class="percentage percentage-35"><span class="text">Alloy / VDM++</span></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div class="container" id="lang-charts">
+				<div class="row" id="lang-charts-row">
+					<div class="radial-graph">
+						<div class="c100 p100 dark">
+			                <span>PT</span>
+			                <div class="slice">
+			                    <div class="bar"></div>
+			                    <div class="fill"></div>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="radial-graph">
+						<div class="c100 p97 dark">
+			                <span>EN</span>
+			                <div class="slice">
+			                    <div class="bar"></div>
+			                    <div class="fill"></div>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="radial-graph">
+						<div class="c100 p20 dark">
+			                <span>ES</span>
+			                <div class="slice">
+			                    <div class="bar"></div>
+			                    <div class="fill"></div>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="radial-graph">
+						<div class="c100 p10 dark">
+			                <span>FR</span>
+			                <div class="slice">
+			                    <div class="bar"></div>
+			                    <div class="fill"></div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+
+			<a href="#"><button class="download-btn"><span class="fa fa-download"></span>Download Curriculum Vitae</button></a>
+
+    </section>
+
+    <div id="projects"></div>
+
+    <section class="content slide light-section" id="portfolio">
+    	<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-offset-2 col-md-4">
+					<div class="info-card">
+						<img style="width: 100%" src="https://avatars.githubusercontent.com/u/564874?v=3" />
+						<div class="info-card-details animate">
+							<div class="info-card-header">
+								<h1> Robert McIntosh </h1>
+								<h3> aka Mouse0270 </h3>
+							</div>
+							<div class="info-card-detail">
+								<!-- Description -->
+								<p>The idea of creating something out of nothing has always generated a passion in my heart. This is what lead me to website development. I can literally create little worlds that hopefully thousands of people can see and even experience.</p>
+								<div class="social">
+									<a href="https://www.facebook.com/rem.mcintosh" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
+
+									<a href="https://twitter.com/Mouse0270" class="[ social-icon twitter ] animate"><span class="fa fa-twitter"></span></a>
+
+									<a href="https://github.com/mouse0270" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
+
+									<a href="https://plus.google.com/u/0/115077481218689845626/posts" class="[ social-icon google-plus ] animate"><span class="fa fa-google-plus"></span></a>
+
+									<a href="www.linkedin.com/in/remcintosh/" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	    		<div class="col-sm-6 col-md-4">
+					<div class="info-card">
+						<img style="width: 100%" src="http://api.randomuser.me/portraits/women/45.jpg" />
+						<div class="info-card-details animate">
+							<div class="info-card-header">
+								<h1> Caroline Samantha Henderson </h1>
+								<h3> aka not a real person </h3>
+							</div>
+							<div class="info-card-detail">
+								<!-- Description -->
+								<p>People often say that beauty is in the eye of the beholder, and I say that the most liberating thing about beauty is realizing that you are the beholder. This empowers us to find beauty in places where others have not dared to look including inside ourselves.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </section>
 
 	<footer class="content slide dark-section" id="footer">
