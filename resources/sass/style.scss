@@ -9,6 +9,10 @@ $white: #FFF;
 $black: #000;
 $break-point: 500px;
 $outline-width: 0;
+$color-facebook: #3b5998;
+$color-linkedin: #007bb5;
+$color-instagram: #8a3ab9;
+$color-skype: #00AFF0;
 
 ::selection {
   background: $turquoise;
@@ -248,8 +252,12 @@ nav li a {
   display: block;
 }
 
-nav li a:hover {
-  color: $dark;
+.menu-options {
+  color: $white !important;
+
+  &:hover { color: $dark !important; }
+  &:active { color: $dark !important; }
+  &:focus { color: $dark !important; }
 }
 
 .container {
@@ -278,6 +286,41 @@ nav li a:hover {
   margin-top:-60px;
   padding-top:60px;
   z-index: -999;
+}
+
+#contacts {
+  position: relative;
+  top:100vh;
+  margin-top:-60px;
+  padding-top:60px;
+  z-index: -999;
+}
+
+footer {
+  position: relative;
+  top:100vh;
+  height: -webkit-calc(100vh + 207px);
+  height:    -moz-calc(100vh + 207px);
+  height:         calc(100vh + 207px);
+  margin-top:-100px;
+  padding-top:60px;
+  padding-bottom: 60px;
+  z-index: 1;
+  background-color: $darker-turquoise;
+
+  .subfooter {
+    margin-top:50px;
+    padding:5px;
+    padding-bottom:15px;
+    background-color: $darkest-turquoise;
+    color: $dark;
+
+    p {
+      padding-left: 10px;
+      color: $turquoise;
+      font-size: 1em;
+    }
+  }
 }
 
 #welcome {
@@ -556,6 +599,22 @@ hr {
   width:100%;
 }
 
+#social-media {
+  position: relative;
+  z-index: -1;
+  top: 100vh;
+  padding: 50px;
+  width:100%;
+}
+
+#end {
+  position: relative;
+  z-index: -1;
+  top: 100vh;
+  padding: 50px;
+  width:100%;
+}
+
 #steps {
   padding-top: 85px;
   padding-bottom: 50px;
@@ -791,6 +850,21 @@ dt {
   }
 }
 
+#footer-btn {
+  background-color: $darkest-turquoise;
+  margin-top: 0;
+
+  &:hover {
+    background-color: $light;
+    color: $darkest-turquoise;
+  }
+
+  &:focus {
+    background-color: $light;
+    color: $darkest-turquoise;
+  }
+}
+
 .card {
   background-color: $dark-lighter;
 
@@ -804,6 +878,7 @@ dt {
       -webkit-user-select: none;
       -ms-user-select: none;
     }
+
     .card-title {
       text-shadow: 0px 0px 5px #000;
       line-height: 1.2em;
@@ -822,6 +897,10 @@ dt {
     }
   }
 
+  .card-content {
+    color: $light !important;
+  }
+
   .card-action {
 
     a {
@@ -838,16 +917,151 @@ dt {
   padding-top: 15px;
 }
 
-footer {
-  position: relative;
-  z-index: -1;
-  background-color: $darker-turquoise;
-  top: 100vh;
-  padding: 800px;
-  height: 100vh;
+.projects-card {
+  background-color: $white !important;
+  .card-image {
 
-  .subfooter {
-    background-color: $darkest-turquoise;
-    color: $dark;
+    .activator {
+
+    }
+  }
+
+  .card-content {
+    .card-title {
+      color: $dark !important;
+
+      i {
+        color: $turquoise;
+        display: inline-block;
+        float: right;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .card-reveal {
+    .card-title {
+      color: $darker-turquoise !important;
+
+      i {
+        color: $turquoise;
+        display: inline-block;
+        float: right;
+      }
+    }
+
+    p {
+      a {
+        color: $turquoise;
+      }
+    }
+
+    a {
+      button {
+        display: inline-block;
+        background-color: $turquoise;
+        color: $white;
+        padding: 10px;
+        margin: 0 auto;
+        float: center;
+        border: none;
+        text-align: center;
+        margin-top: 15px;
+        margin-right: 12px;
+        font-size: 1.25em;
+      }
+    }
+  }
+}
+
+.contacts-text {
+  color: $light;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icon {
+  display: inline-block;
+  position: relative;
+  margin: 5px !important;
+  padding: 0 !important;
+
+  span {
+    line-height: 60px;
+    text-align: center;
+    color: $medium;
+    height: 60px;
+    width: 60px;
+    font-size: 2.5em;
+    border-radius: 0%;
+    background-color: transparent;
+    background: transparent;
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+
+    &:hover {
+      border-radius: 50%;
+      -o-transition:.2s;
+      -ms-transition:.2s;
+      -moz-transition:.2s;
+      -webkit-transition:.2s;
+      transition:.2s;
+    }
+  }
+
+  .fa-github {
+    &:hover {
+      background-color: $light;
+      color: $black;
+    }
+  }
+
+  .fa-linkedin {
+    &:hover {
+      background-color: $color-linkedin;
+      color: $white;
+    }
+  }
+
+  .fa-facebook {
+    &:hover {
+      background-color: $color-facebook;
+      color: $white;
+    }
+  }
+
+  .fa-skype {
+    &:hover {
+      background-color: $color-skype;
+      color: $white;
+    }
+  }
+
+  .fa-instagram {
+    &:hover {
+      background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+      radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+      radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+      radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+      radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+      radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+      radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+      linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+      color: $white;
+    }
+  }
+
+  .fa-envelope {
+    &:hover {
+      background-color: $turquoise;
+      color: $white;
+    }
   }
 }
