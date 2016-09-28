@@ -1422,27 +1422,36 @@ dt {
   background-color: #0b645e;
 }
 
-/* line 853, ../sass/style.scss */
+/* line 854, ../sass/style.scss */
+#photos-btn:hover {
+  background-color: #11978e;
+}
+/* line 858, ../sass/style.scss */
+#photos-btn:focus {
+  background-color: #11978e;
+}
+
+/* line 863, ../sass/style.scss */
 #footer-btn {
   background-color: #0b645e;
   margin-top: 0;
 }
-/* line 857, ../sass/style.scss */
+/* line 867, ../sass/style.scss */
 #footer-btn:hover {
   background-color: #d8d5db;
   color: #0b645e;
 }
-/* line 862, ../sass/style.scss */
+/* line 872, ../sass/style.scss */
 #footer-btn:focus {
   background-color: #d8d5db;
   color: #0b645e;
 }
 
-/* line 868, ../sass/style.scss */
+/* line 878, ../sass/style.scss */
 .card {
   background-color: #385766;
 }
-/* line 873, ../sass/style.scss */
+/* line 883, ../sass/style.scss */
 .card .card-image img {
   user-drag: none;
   user-select: none;
@@ -1451,13 +1460,13 @@ dt {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-/* line 882, ../sass/style.scss */
+/* line 892, ../sass/style.scss */
 .card .card-image .card-title {
   text-shadow: 0px 0px 5px #000;
   line-height: 1.2em;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 887, ../sass/style.scss */
+/* line 897, ../sass/style.scss */
 .card .card-image .card-title small {
   text-shadow: none;
   font-size: 70%;
@@ -1468,54 +1477,54 @@ dt {
   padding-bottom: 1px;
   border-radius: 5px;
 }
-/* line 900, ../sass/style.scss */
+/* line 910, ../sass/style.scss */
 .card .card-content {
   color: #d8d5db !important;
 }
-/* line 906, ../sass/style.scss */
+/* line 916, ../sass/style.scss */
 .card .card-action a {
   color: #13a89e !important;
 }
-/* line 909, ../sass/style.scss */
+/* line 919, ../sass/style.scss */
 .card .card-action a:hover {
   color: #d8d5db !important;
 }
 
-/* line 916, ../sass/style.scss */
+/* line 926, ../sass/style.scss */
 #all-cards {
   padding-top: 15px;
 }
 
-/* line 920, ../sass/style.scss */
+/* line 930, ../sass/style.scss */
 .projects-card {
   background-color: white !important;
 }
-/* line 930, ../sass/style.scss */
+/* line 940, ../sass/style.scss */
 .projects-card .card-content .card-title {
   color: #1d2d35 !important;
 }
-/* line 933, ../sass/style.scss */
+/* line 943, ../sass/style.scss */
 .projects-card .card-content .card-title i {
   color: #13a89e;
   display: inline-block;
   float: right;
   margin-top: 10px;
 }
-/* line 943, ../sass/style.scss */
+/* line 953, ../sass/style.scss */
 .projects-card .card-reveal .card-title {
   color: #11978e !important;
 }
-/* line 946, ../sass/style.scss */
+/* line 956, ../sass/style.scss */
 .projects-card .card-reveal .card-title i {
   color: #13a89e;
   display: inline-block;
   float: right;
 }
-/* line 954, ../sass/style.scss */
+/* line 964, ../sass/style.scss */
 .projects-card .card-reveal p a {
   color: #13a89e;
 }
-/* line 960, ../sass/style.scss */
+/* line 970, ../sass/style.scss */
 .projects-card .card-reveal a button {
   display: inline-block;
   background-color: #13a89e;
@@ -1530,26 +1539,26 @@ dt {
   font-size: 1.25em;
 }
 
-/* line 977, ../sass/style.scss */
+/* line 987, ../sass/style.scss */
 .contacts-text {
   color: #d8d5db;
   text-align: center;
   padding-bottom: 30px;
 }
 
-/* line 983, ../sass/style.scss */
+/* line 993, ../sass/style.scss */
 .social-icons {
   text-align: center;
 }
 
-/* line 987, ../sass/style.scss */
+/* line 997, ../sass/style.scss */
 .social-icon {
   display: inline-block;
   position: relative;
   margin: 5px !important;
   padding: 0 !important;
 }
-/* line 993, ../sass/style.scss */
+/* line 1003, ../sass/style.scss */
 .social-icon span {
   line-height: 60px;
   text-align: center;
@@ -1566,7 +1575,7 @@ dt {
   -webkit-transition: .1s;
   transition: .1s;
 }
-/* line 1009, ../sass/style.scss */
+/* line 1019, ../sass/style.scss */
 .social-icon span:hover {
   border-radius: 50%;
   -o-transition: .2s;
@@ -1575,32 +1584,32 @@ dt {
   -webkit-transition: .2s;
   transition: .2s;
 }
-/* line 1020, ../sass/style.scss */
+/* line 1030, ../sass/style.scss */
 .social-icon .fa-github:hover {
   background-color: #d8d5db;
   color: black;
 }
-/* line 1027, ../sass/style.scss */
+/* line 1037, ../sass/style.scss */
 .social-icon .fa-linkedin:hover {
   background-color: #007bb5;
   color: white;
 }
-/* line 1034, ../sass/style.scss */
+/* line 1044, ../sass/style.scss */
 .social-icon .fa-facebook:hover {
   background-color: #3b5998;
   color: white;
 }
-/* line 1041, ../sass/style.scss */
+/* line 1051, ../sass/style.scss */
 .social-icon .fa-skype:hover {
   background-color: #00aff0;
   color: white;
 }
-/* line 1048, ../sass/style.scss */
+/* line 1058, ../sass/style.scss */
 .social-icon .fa-instagram:hover {
   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
   color: white;
 }
-/* line 1062, ../sass/style.scss */
+/* line 1072, ../sass/style.scss */
 .social-icon .fa-envelope:hover {
   background-color: #13a89e;
   color: white;

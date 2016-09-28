@@ -850,6 +850,16 @@ dt {
   }
 }
 
+#photos-btn {
+  &:hover {
+    background-color: $darker-turquoise;
+  }
+
+  &:focus {
+    background-color: $darker-turquoise;
+  }
+}
+
 #footer-btn {
   background-color: $darkest-turquoise;
   margin-top: 0;
