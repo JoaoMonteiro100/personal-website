@@ -75,10 +75,10 @@
 			</ul>
 		</div>
 		<ul>
-			<li><a href="#about-me" class="active menu-options">João.getAbout()</a></li>
-			<li><a href="#resume" class="menu-options">João.getRésumé()</a></li>
-			<li><a href="#projects" class="menu-options">João.getProjects()</a></li>
-			<li><a href="#contacts" class="menu-options">João.contact()</a></li>
+			<li><a href="#about-me" class="active menu-options">João.getInfo();</a></li>
+			<li><a href="#resume" class="menu-options">João.getRésumé();</a></li>
+			<li><a href="#projects" class="menu-options">João.getProjects();</a></li>
+			<li><a href="#contacts" class="menu-options">João.contact();</a></li>
 		</ul>
 	</nav>
 	
@@ -95,8 +95,8 @@
 					<br>&nbsp&nbspJoão.isHappy = true;
 					<br>&nbsp&nbspJoão.isComitted = true; }</p>
 				<p>for(String section : page) {
-					<br>&nbsp&nbspread();
-					<br>&nbsp&nbspcontact(); }</p>
+					<br>&nbsp&nbsp section.read(); }
+					<br><a href="#contacts">contact()</a>;</p>
 	        </div>
 		</div>
 	</section>
@@ -106,9 +106,9 @@
 	<div id="resume"></div>
 
 	<section class="content slide dark-section" id="cv">
-		<h1 class="centered light-text">João.getRésumé()</h1>
+		<h1 class="centered light-text">João.getRésumé();</h1>
 		<hr>
-		<h2>while(João.inSchool())</h2>
+		<h2>while(João.inSchool()) {</h2>
 		<!-- STEPS -->
 		<section id="steps" class="steps-section">
 		<div class="steps-timeline">
@@ -150,7 +150,7 @@
 		</div><!-- /.steps-timeline -->
 		</section>
 
-		<h2>João.isJustStudying = false</h2>
+		<h2>João.isJustStudying = false; }</h2>
 
 		<div class="container">
 			<div class="row col-md-12" id="all-cards">
@@ -199,7 +199,7 @@
 			</div>
 		</div>
 
-		<h2>João.getSkills()</h2>
+		<h2>João.getSkills();</h2>
 			<div class="container">
 				<div class="row col-md-12">
 					<dl class="animated fadeInLeft col-md-offset-1 col-md-4">
@@ -272,14 +272,14 @@
 			    </div>
 			</div>
 
-			<a href="../resources/docs/CV-en - João Monteiro.pdf"><button class="download-btn waves-effect"><span class="fa fa-download"></span>CV.download()</button></a>
+			<a href="../resources/docs/CV-en - João Monteiro.pdf"><button class="download-btn waves-effect"><span class="fa fa-download"></span>CV.download();</button></a>
 
     </section>
 
     <div id="projects"></div>
 
     <section class="content slide light-section" id="portfolio">
-    	<h1 class="centered dark-text">João.getProjects()</h1>
+    	<h1 class="centered dark-text">João.getProjects();</h1>
 		<hr>
     	<div class="container">
 			<div class="row col-lg-12 col-md-12 col-sm-12">
@@ -416,14 +416,14 @@
 			</div>
 		</div>
 
-		<a href="javascript:void(0);"><button class="download-btn waves-effect" id="photos-btn"><span class="fa fa-photo"></span>Gallery.visit()<br>ERROR! CONTENT UNAVAILABLE</button></a>
+		<a href="javascript:void(0);"><button class="download-btn waves-effect" id="photos-btn"><span class="fa fa-photo"></span>Gallery.visit();<br>ERROR! CONTENT UNAVAILABLE</button></a>
 
     </section>
 
     <div id="contacts"></div>
 
      <section class="content slide dark-section" id="social-media">
-    	<h1 class="centered light-text">João.contact()</h1>
+    	<h1 class="centered light-text">João.contact();</h1>
 		<hr>
 		<p class="contacts-text">João.isAvailable = true;</p>
     	<div class="container social-icons">
@@ -439,10 +439,10 @@
     <div id="end"></div>
 
 	<footer class="content slide" id="footer">
-		<a href="../resources/docs/CV-en - João Monteiro.pdf"><button class="download-btn waves-effect waves-light" id="footer-btn"><span class="fa fa-download"></span>CV.download()</button></a>
+		<a href="../resources/docs/CV-en - João Monteiro.pdf"><button class="download-btn waves-effect waves-light" id="footer-btn"><span class="fa fa-download"></span>CV.download();</button></a>
 
 		<section class="subfooter">
-			<p>Page.lastUpdate = ["September", "2016"]</p>
+			<p>Page.lastUpdate = ["September", "2016"];</p>
 		</section>
 	</footer>
 
