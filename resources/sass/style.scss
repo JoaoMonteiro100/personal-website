@@ -484,6 +484,16 @@ footer {
     }
   }
 }
+
+.percentage {
+  margin-left: 130px !important;
+  max-width: 600px;
+  padding:0;
+
+  &:after {
+    float:right;
+  }
+}
 }
 
 /* iPhone */
@@ -529,7 +539,7 @@ footer {
 }
 }
 
-/* Old iPhones */
+/* Small androids & old iPhones */
 @media only screen and (max-width: 360px){
   .overlay {
   background: rgba(255,255,255,0.8);
@@ -553,6 +563,44 @@ footer {
 
 #arrow-down {
   display: none;
+}
+
+h2 {
+  margin-left: -50px !important;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+#prof-xp {
+  margin-bottom: 70px;
+  margin-top:150px;
+}
+
+.icon-plus {
+  display: none !important;
+}
+
+.card-title {
+  margin: 0 !important;
+  padding: 0 !important;
+  small {
+    display: none;
+  }
+}
+
+.steps-description {
+  margin: 0 !important;
+  padding: 0 !important;
+  padding-left: 20px !important;
+}
+
+.steps-name {
+  padding-top: 150px !important;
+  padding-left: 20px !important;
+}
+
+.steps-timeline {
+  border-left: none !important;
 }
 }
 
