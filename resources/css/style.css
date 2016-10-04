@@ -1556,32 +1556,32 @@ dt {
 .projects-card {
   background-color: white !important;
 }
-/* line 988, ../sass/style.scss */
+/* line 989, ../sass/style.scss */
 .projects-card .card-content .card-title {
   color: #1d2d35 !important;
 }
-/* line 991, ../sass/style.scss */
+/* line 992, ../sass/style.scss */
 .projects-card .card-content .card-title i {
   color: #13a89e;
   display: inline-block;
   float: right;
   margin-top: 10px;
 }
-/* line 1001, ../sass/style.scss */
+/* line 1002, ../sass/style.scss */
 .projects-card .card-reveal .card-title {
   color: #11978e !important;
 }
-/* line 1004, ../sass/style.scss */
+/* line 1005, ../sass/style.scss */
 .projects-card .card-reveal .card-title i {
   color: #13a89e;
   display: inline-block;
   float: right;
 }
-/* line 1012, ../sass/style.scss */
+/* line 1013, ../sass/style.scss */
 .projects-card .card-reveal p a {
   color: #13a89e;
 }
-/* line 1018, ../sass/style.scss */
+/* line 1019, ../sass/style.scss */
 .projects-card .card-reveal a button {
   display: inline-block;
   background-color: #13a89e;
@@ -1596,26 +1596,26 @@ dt {
   font-size: 1.25em;
 }
 
-/* line 1035, ../sass/style.scss */
+/* line 1036, ../sass/style.scss */
 .contacts-text {
   color: #d8d5db;
   text-align: center;
   padding-bottom: 30px;
 }
 
-/* line 1041, ../sass/style.scss */
+/* line 1042, ../sass/style.scss */
 .social-icons {
   text-align: center;
 }
 
-/* line 1045, ../sass/style.scss */
+/* line 1046, ../sass/style.scss */
 .social-icon {
   display: inline-block;
   position: relative;
   margin: 5px !important;
   padding: 0 !important;
 }
-/* line 1051, ../sass/style.scss */
+/* line 1052, ../sass/style.scss */
 .social-icon span {
   line-height: 60px;
   text-align: center;
@@ -1632,7 +1632,7 @@ dt {
   -webkit-transition: .1s;
   transition: .1s;
 }
-/* line 1067, ../sass/style.scss */
+/* line 1068, ../sass/style.scss */
 .social-icon span:hover {
   border-radius: 50%;
   -o-transition: .2s;
@@ -1641,32 +1641,32 @@ dt {
   -webkit-transition: .2s;
   transition: .2s;
 }
-/* line 1078, ../sass/style.scss */
+/* line 1079, ../sass/style.scss */
 .social-icon .fa-github:hover {
   background-color: #d8d5db;
   color: black;
 }
-/* line 1085, ../sass/style.scss */
+/* line 1086, ../sass/style.scss */
 .social-icon .fa-linkedin:hover {
   background-color: #007bb5;
   color: white;
 }
-/* line 1092, ../sass/style.scss */
+/* line 1093, ../sass/style.scss */
 .social-icon .fa-facebook:hover {
   background-color: #3b5998;
   color: white;
 }
-/* line 1099, ../sass/style.scss */
+/* line 1100, ../sass/style.scss */
 .social-icon .fa-skype:hover {
   background-color: #00aff0;
   color: white;
 }
-/* line 1106, ../sass/style.scss */
+/* line 1107, ../sass/style.scss */
 .social-icon .fa-instagram:hover {
   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
   color: white;
 }
-/* line 1120, ../sass/style.scss */
+/* line 1121, ../sass/style.scss */
 .social-icon .fa-envelope:hover {
   background-color: #13a89e;
   color: white;
