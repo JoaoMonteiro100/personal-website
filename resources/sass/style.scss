@@ -75,6 +75,10 @@ p {
   font-size: 1.3em;
   line-height: 1.5em;
   margin-top: 10px;
+
+  strong {
+    font-weight: 700;
+  }
 }
 
 .dark-section {
@@ -625,6 +629,10 @@ hr {
 
 .dark-text {
   color: $dark;
+}
+
+.turquoise-text {
+  color: $darker-turquoise;
 }
 
 .centered {
